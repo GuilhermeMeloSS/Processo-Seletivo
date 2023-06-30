@@ -4,7 +4,11 @@ public class processoSeletivo {
     public static void main(String[] args) {
      String  [] candidatos = {"FELIPE", "MARCIA", "JULIA", "PAULO", "AUGUSTO"};
         for (String candidato : candidatos) {
+            selecaoCandidatos();
+            imprimirSelecionados();
+            
             entrandoEmContato(candidato);
+
         }
 
     }
@@ -12,6 +16,7 @@ public class processoSeletivo {
 static boolean atender (){
     return new Random().nextInt(3) ==1;
 }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 static void entrandoEmContato (String candidato){
     int tentativasRealizadas = 1;
     boolean continuarTentando = true;
